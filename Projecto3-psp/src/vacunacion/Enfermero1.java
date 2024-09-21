@@ -46,7 +46,6 @@ public class Enfermero1 {
             Thread.currentThread().interrupt();
         }
     }
-        @override
         public void run(){
         
         System.out.println("El enfermero "+this.nombre+" comienza a vacunar la compra del cliente "
