@@ -29,7 +29,7 @@ public class Enfermero {
         }
     }
     
-    public void start(ListaPaciente lista, long timeStamp){
+    public void vacunar(ListaPaciente lista, long timeStamp){
         
         System.out.println("El enfermero "+this.nombre+" comienza a vacunar la compra del cliente "
         +lista.getNombre()+ " en el tiempo: "+(System.currentTimeMillis()-timeStamp/1000+ " seg"));
@@ -37,7 +37,7 @@ public class Enfermero {
         for (int i = 0; i<lista.getTiempoPaciente().length; i++){
             this.tiempoVacunacion(lista.getTiempoPaciente()[i]);
             
-            System.out.println("Vacunando al paciente "+(i+1));
+            System.out.println("Vacunando al paciente "+(i+1)+ "-> Tiempo: "+(System.currentTimeMillis()-timeStamp)/1000+" seg");
         }
         
         System.out.println("El enfermero "+this.nombre+ " ha terminado de vacunar "+ lista.getNombre()

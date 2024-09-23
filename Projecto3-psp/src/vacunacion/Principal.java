@@ -17,11 +17,15 @@ public class Principal {
         
         long inicio = System.currentTimeMillis();
         
-        Enfermero enf1 = new Enfermero("Bermejo", lista1, inicio);
-        Enfermero enf2 = new Enfermero("Marco", lista2, inicio);
+        /*Enfermero enf1 = new Enfermero("Bermejo");
+        Enfermero enf2 = new Enfermero("Marco");
+        enf1.vacunar(lista1,inicio);
+        enf1.vacunar(lista2,inicio);*/
 
+        Enfermero1 enf1 = new Enfermero1 ("Bermejo", lista1, inicio);
+        Enfermero1 enf2 = new Enfermero1 ("Marco", lista2, inicio);
+        
         enf1.start();
-        enf1.start();
-
+        enf2.start();
     }
 }
