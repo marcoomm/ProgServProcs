@@ -26,7 +26,7 @@ public class SumatorioFutureTask {
             int num_procesadores = runtime.availableProcessors();
             System.out.println("Dividiendo la tarea: "+num_procesadores+" hilos");
             
-            Long incremento = ((index2-index1)/(num_procesadores -1));
+            Long incremento = index2/num_procesadores;
             System.out.println(incremento);
             
             //sumas parciales
