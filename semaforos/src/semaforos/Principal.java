@@ -24,7 +24,7 @@ public class Principal {
         for(int i =0; i<numPhilosophers;i++){
             Semaphore leftFork = forks[i];
             Semaphore rightFork = forks[(i+1)%numPhilosophers];
-            
+               
             philosophers[i] = new Philosopher(i, leftFork, rightFork);
             philosophers[i].start();
         }
